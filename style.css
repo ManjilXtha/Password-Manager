@@ -1,0 +1,152 @@
+
+    .strength-meter {
+        height: 4px;
+        background-color: #e0e0e0;
+        border-radius: 2px;
+        margin: 8px 0;
+    }
+
+    .strength-meter div {
+        height: 100%;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .strength-meter .weak {
+        background-color: #ef4444;
+        width: 33%;
+    }
+
+    .strength-meter .medium {
+        background-color: #f59e0b;
+        width: 66%;
+    }
+
+    .strength-meter .strong {
+        background-color: #10b981;
+        width: 100%;
+    }
+
+    /* Animations */
+    .login-error {
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Card Styles */
+    .password-card {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .password-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        border-left: 3px solid #f59e0b;
+    }
+
+    /* Modal Styles */
+    .modal {
+        transition: opacity 0.3s ease;
+    }
+
+    .modal > div {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .modal > div:hover {
+        transform: scale(1.01);
+    }
+
+    /* Form Elements */
+    button {
+        transition: all 0.2s ease-in-out;
+    }
+
+    button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="url"],
+    input[type="search"],
+    select {
+        transition: all 0.2s ease-in-out;
+    }
+
+    input[type="text"]:hover,
+    input[type="email"]:hover,
+    input[type="password"]:hover,
+    input[type="url"]:hover,
+    input[type="search"]:hover,
+    select:hover {
+        border-color: #fbbf24;
+        box-shadow: 0 0 5px rgba(251, 191, 36, 0.2);
+    }
+
+    /* Navigation and Menu */
+    nav a {
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        padding-left: 10px;
+    }
+
+    nav a:hover {
+        padding-left: 15px;
+        color: #f59e0b;
+    }
+
+    nav a:hover::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3px;
+        height: 70%;
+        background-color: #f59e0b;
+        border-radius: 2px;
+    }
+
+    #userMenu a {
+        transition: all 0.2s ease-in-out;
+    }
+
+    #userMenu a:hover {
+        background-color: #fef3c7;
+        padding-left: 1.5rem;
+    }
+
+    /* Special Buttons */
+    button[onclick*="copy"] {
+        transition: all 0.2s ease-in-out;
+    }
+
+    button[onclick*="copy"]:hover {
+        transform: scale(1.2);
+        color: #f59e0b;
+    }
+
+    button[onclick*="edit"]:hover,
+    button[onclick*="delete"]:hover {
+        transform: scale(1.2);
+    }
+
+    #generatePasswordBtn:hover {
+        text-decoration: underline;
+        opacity: 0.8;
+}    
+
+

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Pass - Password Manager</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #316991;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        header .buttons button {
+            margin-left: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        header .buttons .login {
+            background-color: transparent;
+            color: #316991;
+            border: 2px solid #316991;
+        }
+
+        header .buttons .signup {
+            background-color: #316991;
+            color: #fff;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background: url('firstpass.png') no-repeat center center/cover;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: #fff;
+            -webkit-text-stroke: 1px #000;
+        }
+
+        .hero p {
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        .hero .cta-buttons {
+            margin-top: 20px;
+        }
+
+        .hero .cta-buttons button {
+            margin: 10px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .hero .cta-buttons .free {
+            background-color: #316991;
+            color: #fff;
+        }
+
+        .hero .cta-buttons .business {
+            background-color: #f9f9f9;
+            color: #316991;
+            border: 2px solid #316991;
+        }
+
+        .features {
+            padding: 50px 10%;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .features h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .features .feature-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .features .feature {
+            margin: 15px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .features .feature h3 {
+            margin-bottom: 10px;
+            color: #316991;
+        }
+
+        .pricing {
+            padding: 50px 10%;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .pricing h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .pricing .plans {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .pricing .plan {
+            margin: 15px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing .plan h3 {
+            color: #316991;
+            margin-bottom: 10px;
+        }
+
+        .pricing .plan p {
+            margin: 10px 0;
+        }
+
+        .pricing .plan .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin: 15px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">FirstPass</div>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+        </nav>
+        <div class="buttons">
+            <button class="login">Log In</button>
+            <button class="signup">Sign Up</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Protect Your Passwords</h1>
+        <p>You’ll never need to remember or type your passwords again.</p>
+        <div class="cta-buttons">
+            <button class="free">Get Started for Free</button>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <h3>Strong Encryption</h3>
+                <p>Keep your data safe with state-of-the-art encryption technology.</p>
+            </div>
+            <div class="feature">
+                <h3>Password Generator</h3>
+                <p>Create secure passwords effortlessly to protect your accounts.</p>
+            </div>
+            <div class="feature">
+                <h3>Family Sharing</h3>
+                <p>Share your password vault securely with family members.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h2>Pricing</h2>
+        <div class="plans">
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p>Perfect for personal use.</p>
+                <p class="price">Rs.500/month</p>
+            </div>
+            <div class="plan">
+                <h3>Yearly Plan</h3>
+                <p>For one year of access.</p>
+                <p class="price">Rs.5400/month</p>
+            </div>
+           
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2024 First Pass. All rights reserved.</p>
+    </footer>
+</body>
+</html>
